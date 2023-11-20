@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" class="calculator-result" readonly>
+        <br>
+        <table class="btntable">
+
+            <tr>
+                <td colspan="2" id="link"><a href = "https://www.linkedin.com/in/lochanacharya13/" >Complex Calculator</a></td>
+                
+                <td onclick="calculateFactorial()">x!</td>
+                <td onclick="appendToResult('(')">&#40;</td>
+                <td onclick="appendToResult(')')">&#41;</td>
+                <td onclick="calculatePercentage()">%</td>
+                <td onclick="clearResult()">AC</td>
+            </tr>
+
+            <tr>
+                <td onclick="setInv()">Inv</td>
+                <td onclick="calculateTrigonometric('sin')" id="sinCell">sin</td>
+                <td onclick="calculateNaturalLog()">ln</td>
+                <td onclick="appendToResult('7')">7</td>
+                <td onclick="appendToResult('8')">8</td>
+                <td onclick="appendToResult('9')">9</td>
+                <td onclick="setOperation('/')">&#247;</td>
+            </tr>
+
+            <tr>
+                <td onclick="setPi()">&#928;</td>
+                <td onclick="calculateTrigonometric('cos')" id="cosCell">cos</td>
+                <td onclick="calculateLog()">log</td>
+                <td onclick="appendToResult('4')">4</td>
+                <td onclick="appendToResult('5')">5</td>
+                <td onclick="appendToResult('6')">6</td>
+                <td onclick="setOperation('*')">x</td>
+            </tr>
+
+            <tr>
+                <td onclick="setE()">e</td>
+                <td onclick="calculateTrigonometric('tan')" id="tanCell">tan</td>
+                <td onclick="calculateSquareRoot()">√</td>
+                <td onclick="appendToResult('1')">1</td>
+                <td onclick="appendToResult('2')">2</td>
+                <td onclick="appendToResult('3')">3</td>
+                <td onclick="setOperation('-')">-</td>
+            </tr>
+
+            <tr>
+                <td onclick="setAns()">Ans</td>
+                <td onclick="calculateExp()">EXP</td>
+                <td onclick="calculatePower('^')">x<sup>y</sup></td>
+                <td onclick="appendToResult('0')">0</td>
+                <td onclick="appendToResult('.')">.</td>
+                <td onclick="calculateResult()">=</td>
+                <td onclick="setOperation('+')">+</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
