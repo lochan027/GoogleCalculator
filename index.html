@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientific Calculator Documentation</title>
-    <!-- Add any additional meta tags or link to external stylesheets here -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Dorang landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Google Calculator</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="assets/css/dorang.css">
+
 </head>
-<body>
-    <h1>Scientific Calculator Documentation</h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            
+            <li class="nav-item"><a href="#Insipiration" class="nav-link">Calculator</a></li>
+            <li class="nav-item"><a href="document.html" class="nav-link">Documentation</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
 
-    <h2>Introduction</h2>
-    <p>
-        This is a simple scientific calculator with basic functionalities implemented using HTML, CSS, and JavaScript.
-    </p>
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
 
-    <h2>Calculator Features</h2>
-    <ul>
-        <li>Basic arithmetic operations: addition, subtraction, multiplication, and division</li>
-        <li>Trigonometric functions: sin, cos, tan, and their inverses</li>
-        <li>Mathematical constants: π (pi) and e (Euler's number)</li>
-        <li>Exponential function: EXP</li>
-        <li>Power function: x^y</li>
-        <li>Square root function: √</li>
-        <li>Percentage calculation</li>
-        <li>Factorial calculation: x!</li>
-        <li>Natural logarithm: ln</li>
-        <li>Memory feature: Ans (answer)</li>
-    </ul>
+    <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Google Calculator</h1>
+            <p class="header-subtitle">Watch the preview below.</p>
 
-    <h2>Usage Instructions</h2>
-    <p>
-        To perform calculations, click the buttons on the calculator interface. The result will be displayed in the input field at the top.
-    </p>
+            <a href = "calc.html"><button class="btn btn-theme-color modal-toggle"> Preview</button></a>
 
-    <h2>Additional Information</h2>
-    <p>
-        For a more advanced calculator, you can check out the <a href="calc.html" target="_blank">Complex Calculator</a> developed by the author.
-    </p>
+        </div>
+    </header><!-- end of page header -->
 
-    <h2>Developer Information</h2>
-    <p>
-        This calculator is developed by [Your Name]. For more information or to connect with the developer, you can visit their LinkedIn profile: <a href="https://www.linkedin.com/in/lochanacharya13/" target="_blank">LinkedIn Profile</a>.
-    </p>
+    
 
-    <!-- Add any additional sections or details as needed -->
+    <!-- page container -->
+    <div class="container page-container" id="Insipiration">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4">Inspiration</h6>
+            <p class="mb-5">
+                The Google Calculator is primarily used for instant calculations, prompting my desire to create a similar tool. Initially, the process was straightforward, but it grew more intricate as I incorporated complex functions. Additionally, I extend my gratitude to Dorang for providing the template for this page.
+            </p>
+            <figure style="color: white;">
+                <img src="google.png" alt="Google original calculator">
+                <figcaption >Fig. - Google calculator screenshot</figcaption>
+              </figure>
+    
+            <p class="title mb-4" style="color: white;">Made by Lochan Acharya</p>
+        </div>  
 
-    <script src="calc.js"></script>
-    <!-- Include any additional scripts if required -->
+          
+        
+        </div><!-- end of row -->
+
+    
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Dorang js -->
+    <script src="assets/js/dorang.js"></script>
+
 </body>
 </html>

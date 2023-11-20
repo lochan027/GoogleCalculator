@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Calculator Documentation</title>
+    
+</head>
+
+<body>
+    <div class="documentation">
+        <h1>Google Calculator Documentation</h1>
+        <a href="index.html">Homepage</a>
+        <h2>Project Overview</h2>
+        <p>This project is a web-based scientific calculator designed to perform various mathematical operations. It has been inspired by google calculator. It
+            includes a user interface with a display area for the input and output of calculations, as well as buttons
+            for different operations and functions.</p>
+
+        <h2>Project Components</h2>
+        <h3>Design and Layout</h3>
+        <img src="google.png">
+        <h3>HTML Structure</h3>
+        <pre>
+            <!-- index.html -->
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                <!-- Meta tags and title -->
+                <!-- External stylesheet -->
+            &lt;/head&gt;
+            &lt;body&gt;
+                <!-- Calculator interface elements -->
+                &lt;div class="calculator"&gt;
+                    <!-- Input display -->
+                    &lt;input type="text" id="result" class="calculator-result" readonly&gt;
+                    
+                    <!-- Numeric and operation buttons -->
+                    &lt;table class="btntable"&gt;
+                        <!-- Button rows and cells -->
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+                <!-- External JavaScript file -->
+                &lt;script src="calc.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+
+        <h3>CSS Styles</h3>
+        <pre>
+            /* calc.css */
+            body {
+                /* Background and text color */
+            }
+
+            .calculator {
+                /* Calculator styling */
+            }
+
+            .calculator-result {
+                /* Input display styling */
+            }
+
+            .btntable {
+                /* Button table styling */
+            }
+
+            .btntable td {
+                /* Button cell styling */
+            }
+
+            .btntable td:hover {
+                /* Hover effect for buttons */
+            }
+        </pre>
+
+        <h3>JavaScript Logic</h3>
+        <pre>
+            // calc.js
+            // Variable declarations
+            let currentInput = '';
+            let currentOperation = '';
+            let nextInput ='';
+            let storedAnswer = '';
+            let complex = '';
+            let complextrue = true;
+            let inverse = true;
+
+            // Event handlers and functions
+            // ...
+
+            // Functions for mathematical operations
+            // ...
+        </pre>
+
+        <h2>Project Limitations</h2>
+        <ol>
+            <li><strong>Incomplete Functionality:</strong> Some trigonometric and logarithmic functions are incomplete
+                or not fully implemented. For example, the inverse trigonometric functions lack complete functionality.
+            </li>
+            <li><strong>Limited Error Handling:</strong> The calculator has limited error handling. Invalid inputs or
+                operations may not be handled appropriately.</li>
+        </ol>
+
+        <h2>Bugs and Errors</h2>
+        <ol>
+            <li><strong>Complex Functionality:</strong> The handling of complex numbers and associated functions is
+                incomplete and may result in unexpected behavior.</li>
+            <li><strong>Incomplete Inverse Functions:</strong> The inverse trigonometric functions are not fully
+                implemented and may not produce accurate results in all cases.</li>
+            <li><strong>Limited Error Messages:</strong> When an error occurs, the calculator displays a generic "Error"
+                message without specifying the nature of the error.</li>
+        </ol>
+
+        <h2>Capabilities</h2>
+        <ol>
+            <li><strong>Basic Arithmetic Operations:</strong> The calculator can perform basic arithmetic operations
+                such as addition, subtraction, multiplication, and division.</li>
+            <li><strong>Trigonometric Functions:</strong> It includes trigonometric functions like sine, cosine, and
+                tangent.</li>
+            <li><strong>Exponential and Logarithmic Functions:</strong> The calculator supports exponential and
+                logarithmic functions, including exponentiation and natural logarithms.</li>
+            <li><strong>Factorial Calculation:</strong> The calculator can calculate the factorial of a given number.
+            </li>
+            <li><strong>Percentage Calculation:</strong> It can calculate percentages of numbers.</li>
+            <li><strong>π (Pi):</strong> The calculator includes the mathematical constant Pi (π) for calculations
+                involving circles and angles.</li>
+            <li><strong>Euler's Number (e):</strong> Euler's number (e) is available for exponential and logarithmic
+                calculations.</li>
+            <li><strong>Exponential Function:</strong> The calculator can perform exponential calculations using the
+                "EXP" button.</li>
+            <li><strong>Power Function:</strong> It supports raising a number to a power using the "x^y" button.</li>
+            <li><strong>Square Root:</strong> The calculator can calculate the square root of a number using the "√"
+                button.</li>
+            <li><strong>Logarithmic Function:</strong> It includes a logarithmic function for base 10 logarithms using
+                the "log" button.</li>
+            <li><strong>Natural Logarithm:</strong> The calculator can compute natural logarithms (base e) using the
+                "ln" button.</li>
+            <li><strong>Ans (Previous Answer):</strong> The "Ans" button retrieves and uses the previous answer in
+                subsequent calculations.</li>
+        </ol>
+        <h2>Future Improvements</h2>
+        <ol>
+            <li><strong>Enhanced Error Handling:</strong> Implement more robust error handling to provide users with
+                specific error messages and improve user experience.</li>
+            <li><strong>Complete Inverse Functions:</strong> Complete the implementation of inverse trigonometric
+                functions and ensure accurate results.</li>
+            <li><strong>Complex Number Support:</strong> Extend functionality to fully support complex numbers and their
+                associated operations.</li>
+            <li><strong>User Interface Improvements:</strong> Enhance the user interface for better usability and visual
+                appeal.</li>
+        </ol>
+
+        <h2>Made By Lochan Acharya</h2>
+
+    </div>
+</body>
+
+</html>
